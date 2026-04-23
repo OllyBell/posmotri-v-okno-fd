@@ -137,7 +137,7 @@ ol {
 
   color: #fff;
 
-  width: 255px;
+  width: 225px;
   height: 27px;
 
   /* input */
@@ -227,12 +227,47 @@ ol {
   outline-offset: 1px;
 }
 
-
 .search-form__label-text {}
 
-.button {}
+.button {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
 
-.search-form__submit-button {}
+  color: #FFFFFF;
+
+  border: 1px solid #FFFFFF;
+
+  background-color: transparent;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  align-self: flex-end;
+}
 
 
 .content__details {
@@ -350,7 +385,10 @@ ol {
 
 .more-button-template {}
 
-.more-button {}
+.more-button {
+  width: 100%; /*у меня почему-то 395, а надо 390*/
+  height: 34px;
+}
 
 .error-template {}
 
